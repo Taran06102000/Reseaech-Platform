@@ -15,13 +15,45 @@
       </header>
       <nav>
         <ul class="main_menu">
-          <li><a href="index.html">home</a></li>
+          <li><a href="new 1.html">home</a></li>
           <li><a href="#">webinars</a></li>
           <li><a href="#">articles</a></li>
           <li><a href="#">radio interviews</a></li>
           <li><a href="#">about</a></li>
         </ul>
       </nav>
+    </div>
+	<div class="subheading">
+		<h1> Home</h1>
+	</div>
+	 <div class="grid">
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="4.jpg" />
+          <div class="card-content">
+            <h1 class="card-header"><b>Federation University Road Nationals Champions</b></h1>
+            <button class="card-btn"><a href="https://www.roadnationals.org.au/">Visit</a> <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img"src="2.jpg"/>
+          <div class="card-content">
+            <h1 class="card-header"><b>Rudy Rules at the Grafton to Inverell</b></h1>
+            <button class="card-btn"><a href="https://www.auscycling.org.au/nsw/news/rudy-rules-grafton-inverell">Visit</a> <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="card">
+          <img class="card-img" src="3.jpg"  />
+          <div class="card-content">
+            <h1 class="card-header"><b>2021 AusCycling Esports National Series</b></h1>
+            <button class="card-btn"><a href="https://www.auscycling.org.au/nat/news/2021-auscycling-esports-national-series">Visit</a> <span>&rarr;</span></button>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   
@@ -31,6 +63,10 @@
   font-family:'Museo Sans 700';
   background-color: #fff;
   box-sizing: border-box;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
   
 heading {
@@ -58,6 +94,7 @@ header h2  {
   font-variant: small-caps;
   text-align: center;
   color: #fff;
+  font-size: 27px;
 }
 
 .main_menu {
@@ -92,10 +129,87 @@ ul.main_menu {
 .logo img{
   position:absolute;
   margin-top: 15px;
-  marging-left: 10px;
-  width: 260;
-  height: 100;
+  marging-left: 15px;
+  width: 350;
+  height: 120;
   background-color: #041243;
  }
-  
+ 
+ .subheading {
+	font-size: 20px;
+	color: #4d4d4f;
+	margin-left: 15px;
+}
+ 
+ .grid {
+  display: grid;
+  width: 94em;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  align-items: start;
+}
+
+.grid-item {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 3rem;
+}
+
+.card-header {
+  font-size: 24px;
+  font-weight: 400;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+
+
+.card-btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 24px;
+  text-align: center;
+  color: #3363ff;
+  background-color: #d8e0fd;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+
+.card-btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active {
+  background-color: #c2cffc;
+}
+
+.card-btn:hover span,
+.card-btn:active span {
+  margin-left: 1.5rem;
+}
+
   </style>
