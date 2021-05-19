@@ -1,2 +1,2 @@
-# Reseaech-Platform
+# Research-Platform
 Federation University Australia - Cycling Event Research
