@@ -14,22 +14,36 @@
       </div>
       <header>
         <h1>Federation University Australia</h1>
-        <h2>Cycling Event Research</h2>
+        <h2>Collaborative Research Platform</h2>
       </header>
-      <nav>
-        <ul class="main_menu">
-          <li><a class="current" href="index.html"><i class="fas fa-home"></i> home</a></li>
-          <li><a href="webinars.html"><i class="fas fa-video"></i> webinars</a></li>
-          <li><a href="articles.html"><i class="fas fa-newspaper"></i> articles</a></li>
-          <li><a href="interviews.html"><i class="fas fa-podcast"></i> radio interviews</a></li>
-          <li><a href="about.html"><i class="fas fa-info"></i> about</a></li>
-        </ul>
-      </nav>
+      
     </div>
-	<div class="subheading">
+	<div class="grid-nav">
+      <div class="grid-item-nav">
+          <div class="card-content-nav">
+          <a href="webinars.html"><button class="card-btn-nav">Webinar <i class="fas fa-video"></i></button></a>
+          </div>
+        </div>
+	  <div class="grid-item-nav">
+           <div class="card-content-nav">
+          <a href="articles.html"><button class="card-btn-nav-ar">Articles <i class="fas fa-newspaper"></i></button></a>
+          </div>
+        </div>
+      <div class="grid-item-nav">
+           <div class="card-content-nav">
+          <a href="interviews.html"><button class="card-btn-nav-ri">Radio Interviews <i class="fas fa-podcast"></i></button></a>
+          </div>
+        </div>
+	  <div class="grid-item-nav">
+		   <div class="card-content-nav">
+          <a href="about.html"><button class="card-btn-nav-ab">About  <i class="fas fa-info"></i></button></a>
+        </div>
+	</div>
+	</div>
+<div class="subheading">
 		<h1> Events</h1>
 	</div>
-	 <div class="grid">
+	<div class="grid">
       <div class="grid-item">
         <div class="card">
           <img class="card-img" src="https://www.roadnationals.org.au/wp-content/uploads/2021/02/RD_Nationals_7-2-21-Chronis-12426-4-scaled.jpg" />
@@ -58,7 +72,7 @@
         </div>
       </div>
     </div>
-	<div class="footer-main">
+<div class="footer-main">
 	
 		<div class="footer-social">
 		<ul>
@@ -73,7 +87,7 @@
 		<p><a href="https://federation.edu.au/copyright-at-feduni" style="color:#fff">Copyright</a> | <a href="https://federation.edu.au/privacy" style="color:#fff"> Privacy</a> | <a href="https://federation.edu.au/accessibility" style="color:#fff"> Accessibility</a> | Copyright Federation University Australia | ABN 51 818 692 256</p>
 		</div>
 	</div>
-  </body>
+ </body>
   
 </html>
 <style>
@@ -103,7 +117,7 @@ header {
 header h1 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin-left: 35%;
+  margin-left: 33%;
   color: #fff;
   font-size: 30px;
 }
@@ -111,7 +125,7 @@ header h1 {
 header h2  {
   font-variant: small-caps;
   letter-spacing: 0.2rem;
-  margin-left: 40%;
+  margin-left: 36.5%;
   color: #fff;
   font-size: 27px;
 }
@@ -144,9 +158,95 @@ ul.main_menu {
   color: #73808a;
   text-decoration: underline;
 }
-.main_menu a.current {
-  color: #FFFF00;
- }
+.grid-nav {
+  display: grid;
+  grid-gap: 5rem;
+  grid-row-gap: 3rem;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  grid-auto-rows: auto;
+  align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
+
+.grid-item-nav {
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.2s;
+}
+.grid-item-nav:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.card-content-nav {
+}
+
+.card-btn-nav {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #eb6f1b;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+.card-btn-nav-ar{
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #ec008c;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+.card-btn-nav-ri {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #73808a;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+}
+.card-btn-nav-ab {
+  display: block;
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 24px;
+  text-align: center;
+  color: #fff;
+  background-color: #b0ae24;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  
+}
+.card-content-nav a {
+	text-decoration: none;
+	color: #fff;
+}
 
 .logo img{
   float: left;
@@ -162,7 +262,7 @@ ul.main_menu {
  .subheading {
 	font-size: 20px;
 	color: #4d4d4f;
-	margin-left: 15px;
+	text-align: center;
 }
  
  .grid {
