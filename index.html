@@ -20,28 +20,40 @@
     </div>
 	<div class="grid-nav">
       <div class="grid-item-nav">
+	      <div class="card-nav">
+          <img class="card-img-nav" src="https://www.studyinnewzealand.govt.nz/themes/default/img/studies/bg-step-1.png" />
           <div class="card-content-nav">
           <a href="webinars.html"><button class="card-btn-nav">Webinar <i class="fas fa-video"></i></button></a>
           </div>
+		  </div>
         </div>
 	  <div class="grid-item-nav">
-           <div class="card-content-nav">
+	      <div class="card-nav">
+          <img class="card-img-nav" src="https://www.studyinnewzealand.govt.nz/themes/default/img/studies/bg-step-3.png" />
+          <div class="card-content-nav">
           <a href="articles.html"><button class="card-btn-nav-ar">Articles <i class="fas fa-newspaper"></i></button></a>
           </div>
+		  </div>
         </div>
       <div class="grid-item-nav">
-           <div class="card-content-nav">
+	      <div class="card-nav">
+          <img class="card-img-nav" src="https://www.studyinnewzealand.govt.nz/themes/default/img/studies/bg-step-5.png" />
+          <div class="card-content-nav">
           <a href="interviews.html"><button class="card-btn-nav-ri">Radio Interviews <i class="fas fa-podcast"></i></button></a>
           </div>
+		  </div>
         </div>
 	  <div class="grid-item-nav">
+	      <div class="card-nav">
+          <img class="card-img-nav" src="https://www.studyinnewzealand.govt.nz/themes/default/img/studies/bg-step-4.png" />
 		   <div class="card-content-nav">
           <a href="about.html"><button class="card-btn-nav-ab">About  <i class="fas fa-info"></i></button></a>
         </div>
+		</div>
 	</div>
 	</div>
 <div class="subheading">
-		<h1> Events</h1>
+		<p>Upcoming Events</p>
 	</div>
 	<div class="grid">
       <div class="grid-item">
@@ -49,6 +61,7 @@
           <img class="card-img" src="https://www.roadnationals.org.au/wp-content/uploads/2021/02/RD_Nationals_7-2-21-Chronis-12426-4-scaled.jpg" />
           <div class="card-content">
             <h1 class="card-header"><b>Federation University Road Nationals Champions</b></h1>
+			<p class="card-para">More than 1400 cyclists from across Australia will descend on Ballarat this week for the AusCycling 2021 Federation University Road National Championships.</p>
             <a href="https://www.roadnationals.org.au/"><button class="card-btn">Visit <span>&rarr;</span></button></a>
           </div>
         </div>
@@ -58,6 +71,7 @@
           <img class="card-img"src="https://www.roadnationals.org.au/wp-content/uploads/2021/02/RD_Nationals_5-2-21-Chronis-9498-scaled.jpg"/>
           <div class="card-content">
             <h1 class="card-header"><b>Rudy Rules at the Grafton to Inverell</b></h1>
+			<p class="card-para">Rudy Porter (InForm TMX Make) has won the 60th edition of the 2021 NRS David Reid Homes Grafton to Inverell Cycle Classic.</p>
             <a href="https://www.auscycling.org.au/nsw/news/rudy-rules-grafton-inverell"><button class="card-btn">Visit <span>&rarr;</span></button></a>
           </div>
         </div>
@@ -67,6 +81,7 @@
           <img class="card-img" src="https://www.roadnationals.org.au/wp-content/uploads/2021/02/RD_Nationals_5-2-21-Chronis-9557-scaled.jpg"  />
           <div class="card-content">
             <h1 class="card-header"><b>2021 AusCycling Esports National Series</b></h1>
+			<p class="card-para">AusCycling is pleased to confirm three AusCycling Esports National Series for 2021 that will include races for Elite Teams, Club and Junior riders.</p>
             <a href="https://www.auscycling.org.au/nat/news/2021-auscycling-esports-national-series"><button class="card-btn">Visit <span>&rarr;</span></button></a>
           </div>
         </div>
@@ -183,6 +198,14 @@ ul.main_menu {
   transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
 
+.card-img-nav {
+  display: block;
+  width: 100%;
+  height: 10rem;
+  object-fit: cover;
+  background-color: #fff;
+}
+
 .card-content-nav {
 }
 
@@ -260,7 +283,7 @@ ul.main_menu {
  }
  
  .subheading {
-	font-size: 20px;
+	font-size: 28px;
 	color: #4d4d4f;
 	text-align: center;
 }
@@ -305,9 +328,11 @@ ul.main_menu {
 .card-header {
   font-size: 24px;
   color: #0d0d0d;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
-
+.card-para {
+ margin-top: 0.1rem;
+ }
 
 .card-btn {
   display: block;
