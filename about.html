@@ -14,29 +14,35 @@
       </div>
       <header>
         <h1>Federation University Australia</h1>
-        <h2>Cycling Event Research</h2>
+        <h2>Collaborative Research Platform</h2>
       </header>
       <nav>
         <ul class="main_menu">
-          <li><a href="index.html"><i class="fas fa-home"></i><b>home</b></a></li>
+          <li><a href="feduni.html"><i class="fas fa-home"></i><b>home</b></a></li>
         </ul>
       </nav>
     </div>
+	<div class="subheading">
+		<h1 style="text-align:center">About</h1>
+	</div>
 	<div class="information">
 		<p style="text-align:justify"><b>This initiative – the cycling event research group – was born out of a research project that founding group members carried out for the 2021 Federation University Road Nationals Championships, hosted by AusCycling in Ballarat, Victoria.The research group consists of founding members from Federation University Australia and includes collaborators from other Australian universities including Griffith University and University of Newcastle.</p></b> 
-        <p style="text-align:justify"><b>The research group have collaborated on subsequent projects which have considered the social and business aspects of cycling events and have developed this website as a platform to:</p></b>  
-		<p><b>Share research findings from current (and past) research projects;</p></b>   
-		<p><b>Link to existing key research in the area; and</p></b>   
-		<p><b>Promote upcoming knowledge sharing events hosted y members of the research group.</p></b>  
+		<p style="text-align:justify"><b>The research group have collaborated on subsequent projects which have considered the social and business aspects of cycling events and have developed this website as a platform to:</p></b>  
+		<p><b><i class="fas fa-dot-circle"></i> Share research findings from current (and past) research projects;</p></b>   
+		<p><b><i class="fas fa-dot-circle"></i> Link to existing key research in the area; and</p></b>   
+		<p><b><i class="fas fa-dot-circle"></i> Promote upcoming knowledge sharing events hosted y members of the research group.</p></b> 
 		<p style="text-align:justify"><b>We invite you to take a look around our resource collection, provide advice on what you would like to see more of, and sign up to our newsletter to keep up to date with what’s going on in the cycling event research space.</p></b> 
+	</div>
+	<div class="subheading">
+		<h1 style="text-align:center">Contributers</h1>
 	</div>
 	<div class="grid">
       <div class="grid-item">
         <div class="card">
-          <img class="card-img" src="alanna.png" />
+          <img class="card-img" src="alana.jpg" />
           <div class="card-content">
             <h1 class="card-header"><b>Dr Alana Thomson</b></h1>
-			<p class="card-para">Dr Alana Thomson is a Lecturer in Management in the Federation Business School, Brisbane campus. Alana’s research, which has been published in ABDC A-ranked journals, has looked at the connections between sport and communities, particular securing positive legacy outcomes from large-scale sport events. Alana has worked and researched with a range of user groups in sport, including Aboriginal and Torres Strait Island peoples, Pacific Island communities, Chinese communities, Masters athletes and women in sport. Alongside her research career, Alana has professional experience as a policy writer working on the Gold Coast 2018 Commonwealth games and practitioner in the sport and sport event sector. Alana has most recently led a team to monitor and evaluate a Rugby Australia pilot program hosted by Sunnybank Rugby Union Club in Brisbane to engage the local Chinese and Mandarin-speaking community.</p>
+			<p class="card-para" style="text-align:justify">Dr Alana Thomson is a Lecturer in Management in the Federation Business School, Brisbane campus. Alana’s research, which has been published in ABDC A-ranked journals, has looked at the connections between sport and communities, particular securing positive legacy outcomes from large-scale sport events. Alana has worked and researched with a range of user groups in sport, including Aboriginal and Torres Strait Island peoples, Pacific Island communities, Chinese communities, Masters athletes and women in sport. Alongside her research career, Alana has professional experience as a policy writer working on the Gold Coast 2018 Commonwealth games and practitioner in the sport and sport event sector. Alana has most recently led a team to monitor and evaluate a Rugby Australia pilot program hosted by Sunnybank Rugby Union Club in Brisbane to engage the local Chinese and Mandarin-speaking community.</p>
           </div>
         </div>
       </div>
@@ -147,7 +153,7 @@ header {
 header h1 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  margin-left: 35%;
+  margin-left: 33%;
   color: #fff;
   font-size: 30px;
 }
@@ -155,7 +161,7 @@ header h1 {
 header h2  {
   font-variant: small-caps;
   letter-spacing: 0.2rem;
-  margin-left: 40%;
+  margin-left: 36.5%;
   color: #fff;
   font-size: 27px;
 }
@@ -193,7 +199,15 @@ ul.main_menu {
   max-height: 20%;
   background-color: #041243;
  }
- 
+
+ .subheading h1{
+	font-size: 35px;
+	color: #4d4d4f;
+	margin-top: 5px;
+	margin-bottom: 2px;
+	text-shadow: 6px 3px 16px rgba(77,77,79,0.61);
+}
+
  .information {
 	font-size: 18px;
 	color: #4d4d4f;
@@ -203,9 +217,10 @@ ul.main_menu {
 }
 .information p {
 	margin-top: 3px;
-	margin-bottom: 3px;
+	margin-bottom: 10px;
 	letter-spacing: 0.5px;
 }
+
 .grid {
   display: grid;
   grid-gap: 1rem;
@@ -224,11 +239,6 @@ ul.main_menu {
   transition: 0.2s;
 }
 
-.grid-item:hover {
-  transform: translateY(-0.5%);
-  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
-}
-
 .card-img {
   display: block;
   width: 100%;
@@ -237,16 +247,17 @@ ul.main_menu {
 }
 
 .card-content {
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
-  padding-top: 2.0rem;
-  padding-bottom: 2.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .card-header {
   font-size: 24px;
   color: #0d0d0d;
   margin-bottom: 0rem;
+  margin-top: 0rem;
 }
 .card-para {
  margin-top: 0.1rem;
