@@ -1,2 +1,2 @@
 # Research-Platform
-Federation University Australia - Cycling Event Research
+Federation University Australia - Collaborative Research Platform
